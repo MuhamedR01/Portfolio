@@ -1,20 +1,24 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css';
-import Navbar from './components/Navbar';
-import Hero from './Hero';
+import React from "react";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+// Import other section components as needed
+// import About from "./components/About";
+// import Skills from "./components/Skills";
+// import Portfolio from "./components/Portfolio";
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen relative">
+    <div className="App">
+      <div>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Hero />} />
-          {/* Add more routes here as you create more pages */}
-        </Routes>
       </div>
-    </Router>
+      <Hero />
+      {/* Add other sections here */}
+      {/* <About />
+      <Skills />
+      <Portfolio /> */}
+    </div>
   );
 }
 
