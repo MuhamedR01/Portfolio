@@ -1,6 +1,6 @@
 import React from 'react';
 import { EnvelopeSimple, LinkedinLogo } from 'phosphor-react';
-import profileImage from '../assets/images/profilepicture.png'; // Make sure to add your profile image
+import profileImage from '../images/profilepicture.png';
 
 const UpworkIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
@@ -11,12 +11,18 @@ const UpworkIcon = () => (
 const Hero = () => {
   return (
     <div className="flex min-h-screen diagonal-background">
-      <div className="w-1/2 flex items-center justify-center">
-        <div className="max-w-md">
-          <h1 className="text-4xl font-bold mb-2 text-black">Hi, I am</h1>
-          <h2 className="text-6xl font-bold mb-2 text-black">Muhamed Rexhepi</h2>
-          <p className="text-xl text-gray-600 mb-8">Full-Stack Developer</p>
-          <div className="flex space-x-4">
+      <div className="container mx-auto flex">
+        <div className="w-1/2 flex flex-col justify-center px-20">
+          <div className="mb-20">
+            {/* Add your logo here */}
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {/* Add your logo SVG path here */}
+            </svg>
+          </div>
+          <h1 className="text-4xl font-bold text-black">Hi, I am</h1>
+          <h2 className="text-6xl font-bold text-black">Muhamed Rexhepi</h2>
+          <p className="text-xl text-gray-600">Full-Stack Developer</p>
+          <div className="flex space-x-4 mt-8">
             <a href="mailto:info@muhamedrexhepi.tech" className="bg-[#909090] p-3 rounded-full hover:bg-gray-400 transition-colors">
               <EnvelopeSimple size={24} />
             </a>
@@ -28,9 +34,9 @@ const Hero = () => {
             </a>
           </div>
         </div>
-      </div>
-      <div className="w-1/2 flex items-center justify-center">
-        <img src={profileImage} alt="Muhamed Rexhepi" className="max-h-[80vh] object-cover" />
+        <div className="w-1/2 flex items-end justify-center">
+          <img src={profileImage} alt="Muhamed Rexhepi" className="h-[90vh] object-cover" />
+        </div>
       </div>
     </div>
   );

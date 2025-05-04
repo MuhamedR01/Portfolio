@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
 .diagonal-background {
-  background: linear-gradient(110deg, #D7D7D7 50%, black 50%);
+  background: linear-gradient(105deg, #D7D7D7 0%, #D7D7D7 40%, #333 60%, #000 100%);
 }

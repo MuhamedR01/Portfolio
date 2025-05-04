@@ -1,11 +1,8 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-// Import other section components as needed
-// import About from "./components/About";
-// import Skills from "./components/Skills";
-// import Portfolio from "./components/Portfolio";
+import Navbar from "./assets/components/Navbar";
+import Hero from "./assets/components/Hero";
+import AboutMe from './assets/components/AboutMe';
 
 function App() {
   return (
@@ -14,10 +11,7 @@ function App() {
         <Navbar />
       </div>
       <Hero />
-      {/* Add other sections here */}
-      {/* <About />
-      <Skills />
-      <Portfolio /> */}
+      <AboutMe />
     </div>
   );
 }
