@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { EnvelopeSimple, LinkedinLogo } from 'phosphor-react';
 import profileImage from '../images/profilepicture.png';
 
@@ -9,10 +9,16 @@ const UpworkIcon = () => (
 );
 
 const Hero = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   return (
     <div className="flex min-h-screen diagonal-background">
       <div className="container mx-auto flex">
-        <div className="w-1/2 flex flex-col justify-center px-20">
+        <div className={`w-1/2 flex flex-col justify-center px-20 transform transition-all duration-1000 ease-out ${isLoaded ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}`}>
           <div className="mb-20">
             {/* Add your logo here */}
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +40,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div className="w-1/2 flex items-end justify-center">
+        <div className={`w-1/2 flex items-end justify-center transform transition-all duration-1000 ease-out ${isLoaded ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
           <img src={profileImage} alt="Muhamed Rexhepi" className="h-[90vh] object-cover" />
         </div>
       </div>
