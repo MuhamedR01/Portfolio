@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { EnvelopeSimple, LinkedinLogo } from 'phosphor-react';
 import profileImage from '../images/profilepicture.png';
+import logo from '../images/logo.png'; // Make sure this path is correct
 
 const UpworkIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
@@ -16,35 +17,56 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="flex min-h-screen diagonal-background">
-      <div className="container mx-auto flex">
-        <div className={`w-1/2 flex flex-col justify-center px-20 transform transition-all duration-1000 ease-out ${isLoaded ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}`}>
-          <div className="mb-20">
-            {/* Add your logo here */}
-            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-              {/* Add your logo SVG path here */}
-            </svg>
-          </div>
-          <h1 className="text-4xl font-bold text-black">Hi, I am</h1>
-          <h2 className="text-6xl font-bold text-black">Muhamed Rexhepi</h2>
-          <p className="text-xl text-gray-600">Full-Stack Developer</p>
-          <div className="flex space-x-4 mt-8">
-            <a href="mailto:info@muhamedrexhepi.tech" className="bg-[#909090] p-3 rounded-full hover:bg-gray-400 transition-colors">
+    <>
+      {/* Mobile layout */}
+      <div className="md:hidden min-h-screen bg-black text-white relative overflow-hidden pt-24"> {/* Increased top padding */}
+        {/* Profile Image */}
+        <img src={profileImage} alt="Muhamed Rexhepi" className="w-full h-full object-cover object-center" />
+
+        {/* Overlay */}
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent pt-20 pb-8 px-6">
+          <h2 className="text-xl font-light mb-1">Hi, I am</h2>
+          <h1 className="text-4xl font-bold mb-2">Muhamed Rexhepi</h1>
+          <p className="text-lg mb-6">Full-Stack Developer</p>
+          <div className="flex space-x-4">
+            <a href="mailto:info@muhamedrexhepi.tech" className="bg-gray-700 p-3 rounded-full">
               <EnvelopeSimple size={24} />
             </a>
-            <a href="https://www.upwork.com/freelancers/muhamedr11" target="_blank" rel="noopener noreferrer" className="bg-[#909090] p-3 rounded-full hover:bg-gray-400 transition-colors">
+            <a href="https://www.upwork.com/freelancers/muhamedr11" target="_blank" rel="noopener noreferrer" className="bg-gray-700 p-3 rounded-full">
               <UpworkIcon />
             </a>
-            <a href="https://www.linkedin.com/in/muhamed-rexhepi-29ab59233" target="_blank" rel="noopener noreferrer" className="bg-[#909090] p-3 rounded-full hover:bg-gray-400 transition-colors">
+            <a href="https://www.linkedin.com/in/muhamed-rexhepi-29ab59233" target="_blank" rel="noopener noreferrer" className="bg-gray-700 p-3 rounded-full">
               <LinkedinLogo size={24} />
             </a>
           </div>
         </div>
-        <div className={`w-1/2 flex items-end justify-center transform transition-all duration-1000 ease-out ${isLoaded ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
-          <img src={profileImage} alt="Muhamed Rexhepi" className="h-[90vh] object-cover" />
+      </div>
+
+      {/* Desktop layout */}
+      <div className="hidden md:flex min-h-screen diagonal-background">
+        <div className="container mx-auto flex">
+          <div className={`w-1/2 flex flex-col justify-center px-20 transform transition-all duration-1000 ease-out ${isLoaded ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}`}>
+            <h1 className="text-4xl font-bold text-black">Hi, I am</h1>
+            <h2 className="text-6xl font-bold text-black">Muhamed Rexhepi</h2>
+            <p className="text-xl text-gray-600">Full-Stack Developer</p>
+            <div className="flex space-x-4 mt-8">
+              <a href="mailto:info@muhamedrexhepi.tech" className="bg-[#909090] p-3 rounded-full hover:bg-gray-400 transition-colors">
+                <EnvelopeSimple size={24} />
+              </a>
+              <a href="https://www.upwork.com/freelancers/muhamedr11" target="_blank" rel="noopener noreferrer" className="bg-[#909090] p-3 rounded-full hover:bg-gray-400 transition-colors">
+                <UpworkIcon />
+              </a>
+              <a href="https://www.linkedin.com/in/muhamed-rexhepi-29ab59233" target="_blank" rel="noopener noreferrer" className="bg-[#909090] p-3 rounded-full hover:bg-gray-400 transition-colors">
+                <LinkedinLogo size={24} />
+              </a>
+            </div>
+          </div>
+          <div className={`w-1/2 flex items-end justify-center transform transition-all duration-1000 ease-out ${isLoaded ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
+            <img src={profileImage} alt="Muhamed Rexhepi" className="h-[90vh] object-cover" />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

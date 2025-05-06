@@ -3,15 +3,17 @@ import "./App.css";
 import Navbar from "./assets/components/Navbar";
 import Hero from "./assets/components/Hero";
 import AboutMe from './assets/components/AboutMe';
+import Services from './assets/components/Services';
+import Skills from './assets/components/Skills';
 
 function App() {
   return (
     <div className="App">
-      <div>
-        <Navbar />
-      </div>
+      <Navbar />
       <Hero />
-      <AboutMe />
+      <div id="about"><AboutMe /></div>
+      <div id="services"><Services /></div>
+      <div id="skills"><Skills /></div>
     </div>
   );
 }
