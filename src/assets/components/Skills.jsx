@@ -97,12 +97,12 @@ const Skills = () => {
     { name: 'JavaScript', icon: faJs },
     { name: 'React', icon: faReact },
     { name: 'Bootstrap', icon: faBootstrap },
-    { name: 'Git', icon: faGitAlt },
-    { name: 'Figma', icon: faFigma },
+    { name: 'Tailwind CSS', icon: 'tailwind' },
     { name: 'PHP', icon: faPhp },
     { name: 'MySQL', icon: 'mysql' },
     { name: 'WordPress', icon: faWordpress },
-    { name: 'Tailwind CSS', icon: 'tailwind' },
+    { name: 'Figma', icon: faFigma },
+    { name: 'Git', icon: faGitAlt },
   ];
 
   const learning = [
