@@ -12,7 +12,7 @@ const Navbar = () => {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     setIsMenuOpen(false);
   };
@@ -51,9 +51,9 @@ const Navbar = () => {
               <li><a onClick={() => scrollToSection('about')} className={linkClass}>About me</a></li>
               <li><a onClick={() => scrollToSection('services')} className={linkClass}>Services</a></li>
               <li><a onClick={() => scrollToSection('skills')} className={linkClass}>Skills</a></li>
-              <li><a onClick={() => scrollToSection('portfolio')} className={linkClass}>Portfolio</a></li>
+              {/* <li><a onClick={() => scrollToSection('portfolio')} className={linkClass}>Portfolio</a></li> */}
               <li>
-                <button className={buttonClass}>
+                <button onClick={() => scrollToSection('contact')} className={buttonClass}>
                   CONTACT ME
                 </button>
               </li>
@@ -89,11 +89,11 @@ const Navbar = () => {
           <li className="py-2 w-full text-center">
             <a onClick={() => scrollToSection('skills')} className={`${mobileLinkClass} block py-2`}>Skills</a>
           </li>
+          {/* <li className="py-2 w-full text-center"> */}
+            {/* <a onClick={() => scrollToSection('portfolio')} className={`${mobileLinkClass} block py-2`}>Portfolio</a> */}
+          {/* </li> */}
           <li className="py-2 w-full text-center">
-            <a onClick={() => scrollToSection('portfolio')} className={`${mobileLinkClass} block py-2`}>Portfolio</a>
-          </li>
-          <li className="py-2 w-full text-center">
-            <button className={buttonClass}>
+            <button onClick={() => scrollToSection('contact')} className={buttonClass}>
               CONTACT ME
             </button>
           </li>
