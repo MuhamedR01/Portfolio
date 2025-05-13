@@ -34,23 +34,21 @@ const MySQLIcon = () => (
   );
  
   const TailwindIcon = () => (
-    <div className="w-12 h-12 text-black">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 33" width="48" height="48">
-        <g clipPath="url(#prefix__clip0)">
-          <path
-            fill="currentColor"
-            fillRule="evenodd"
-            d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
-            clipRule="evenodd"
-          />
-        </g>
-        <defs>
-          <clipPath id="prefix__clip0">
-            <path fill="#fff" d="M0 0h54v32.4H0z" />
-          </clipPath>
-        </defs>
-      </svg>
-    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 33" width="48" height="48">
+      <g clipPath="url(#prefix__clip0)">
+        <path
+          fill="#000000"
+          fillRule="evenodd"
+          d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
+          clipRule="evenodd"
+        />
+      </g>
+      <defs>
+        <clipPath id="prefix__clip0">
+          <path fill="#fff" d="M0 0h54v32.4H0z" />
+        </clipPath>
+      </defs>
+    </svg>
   );
 
   
@@ -62,32 +60,60 @@ const TypeScriptIcon = () => (
     </div>
   );
 
+const AdobePhotoshopIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+    <path d="M 13.5 6 C 9.3754991 6 6 9.3754991 6 13.5 L 6 34.5 C 6 38.624501 9.3754991 42 13.5 42 L 34.5 42 C 38.624501 42 42 38.624501 42 34.5 L 42 13.5 C 42 9.3754991 38.624501 6 34.5 6 L 13.5 6 z M 16.5 15 L 19 15 C 22.03 15 24.5 17.47 24.5 20.5 C 24.5 23.53 22.03 26 19 26 L 18 26 L 18 31.5 C 18 32.33 17.33 33 16.5 33 C 15.67 33 15 32.33 15 31.5 L 15 16.5 C 15 15.67 15.67 15 16.5 15 z M 18 18 L 18 23 L 19 23 C 20.38 23 21.5 21.88 21.5 20.5 C 21.5 19.12 20.38 18 19 18 L 18 18 z M 29.050781 21 L 30.400391 21 C 31.840391 21 33.159922 21.91 33.669922 23.25 C 33.969922 24.03 33.580781 24.889453 32.800781 25.189453 C 32.030781 25.489453 31.159141 25.090313 30.869141 24.320312 C 30.809141 24.160312 30.640391 24 30.400391 24 L 29.050781 24 C 28.640781 24 28.300781 24.34 28.300781 24.75 C 28.300781 25.16 28.640781 25.5 29.050781 25.5 L 30.25 25.5 C 32.32 25.5 34 27.18 34 29.25 C 34 31.32 32.32 33 30.25 33 L 28.099609 33 C 27.249609 33 26.429063 32.690859 25.789062 32.130859 C 25.659063 32.010859 25.539687 31.889766 25.429688 31.759766 C 24.889688 31.119766 24.979375 30.180625 25.609375 29.640625 C 26.249375 29.110625 27.190469 29.200078 27.730469 29.830078 C 27.830469 29.930078 27.939609 30 28.099609 30 L 30.25 30 C 30.66 30 31 29.66 31 29.25 C 31 28.84 30.66 28.5 30.25 28.5 L 29.050781 28.5 C 26.980781 28.5 25.300781 26.82 25.300781 24.75 C 25.300781 22.68 26.980781 21 29.050781 21 z"></path>
+  </svg>
+);
 
+const NextJsIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+    <path fill="#212121" d="M18.974,31.5c0,0.828-0.671,1.5-1.5,1.5s-1.5-0.672-1.5-1.5v-14c0-0.653,0.423-1.231,1.045-1.43 c0.625-0.198,1.302,0.03,1.679,0.563l16.777,23.704C40.617,36.709,44,30.735,44,24c0-11-9-20-20-20S4,13,4,24s9,20,20,20 c3.192,0,6.206-0.777,8.89-2.122L18.974,22.216V31.5z M28.974,16.5c0-0.828,0.671-1.5,1.5-1.5s1.5,0.672,1.5,1.5v13.84l-3-4.227 V16.5z"></path>
+  </svg>
+);
 
-  const SkillItem = ({ name, icon }) => (
-    <div className="flex flex-col items-center">
-      {icon === 'mongodb' ? (
-        <div className="mb-2">
-          <MongoDBIcon />
-        </div>
-      ) : icon === 'mysql' ? (
-        <div className="mb-2">
-          <MySQLIcon />
-        </div>
-      ) : icon === 'tailwind' ? (
-        <div className="mb-2">
-          <TailwindIcon />
-        </div>
-      ) : icon === 'typescript' ? (
-        <div className="mb-2">
-          <TypeScriptIcon />
-        </div>
-      ) : (
-        <FontAwesomeIcon icon={icon} size="3x" className="mb-2" />
-      )}
-      <span className="text-xs uppercase">{name}</span>
-    </div>
-  );
+const ExpressJsIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 50 50">
+    <path d="M49.729 11h-.85c-1.051 0-2.041.49-2.68 1.324l-8.7 11.377-8.7-11.377C28.162 11.49 27.171 11 26.121 11h-.85l10.971 14.346L25.036 40h.85c1.051 0 2.041-.49 2.679-1.324L37.5 26.992l8.935 11.684C47.073 39.51 48.063 40 49.114 40h.85L38.758 25.346 49.729 11zM21.289 34.242c-2.554 3.881-7.582 5.87-12.389 4.116C4.671 36.815 2 32.611 2 28.109L2 27h12v0h11l0-4.134c0-6.505-4.818-12.2-11.295-12.809C6.273 9.358 0 15.21 0 22.5l0 5.573c0 5.371 3.215 10.364 8.269 12.183 6.603 2.376 13.548-1.17 15.896-7.256 0 0 0 0 0 0h-.638C22.616 33 21.789 33.481 21.289 34.242zM2 22.5C2 16.71 6.71 12 12.5 12S23 16.71 23 22.5V25H2V22.5z"></path>
+  </svg>
+);
+
+const SkillItem = ({ name, icon }) => (
+  <div className="flex flex-col items-center">
+    {icon === 'mongodb' ? (
+      <div className="mb-2">
+        <MongoDBIcon />
+      </div>
+    ) : icon === 'mysql' ? (
+      <div className="mb-2">
+        <MySQLIcon />
+      </div>
+    ) : icon === 'tailwind' ? (
+      <div className="mb-2">
+        <TailwindIcon />
+      </div>
+    ) : icon === 'typescript' ? (
+      <div className="mb-2">
+        <TypeScriptIcon />
+      </div>
+    ) : icon === 'adobe-photoshop' ? (
+      <div className="mb-2">
+        <AdobePhotoshopIcon />
+      </div>
+    ) : icon === 'nextjs' ? (
+      <div className="mb-2">
+        <NextJsIcon />
+      </div>
+    ) : icon === 'expressjs' ? (
+      <div className="mb-2">
+        <ExpressJsIcon />
+      </div>
+    ) : (
+      <FontAwesomeIcon icon={icon} size="3x" className="mb-2" />
+    )}
+    <span className="text-xs uppercase">{name}</span>
+  </div>
+);
 
 const Skills = () => {
   const usingNow = [
@@ -96,18 +122,21 @@ const Skills = () => {
     { name: 'SASS', icon: faSass },
     { name: 'JavaScript', icon: faJs },
     { name: 'React', icon: faReact },
+    { name: 'Next.js', icon: 'nextjs' },
     { name: 'Bootstrap', icon: faBootstrap },
     { name: 'Tailwind CSS', icon: 'tailwind' },
     { name: 'PHP', icon: faPhp },
+    { name: 'Laravel', icon: faLaravel },
     { name: 'MySQL', icon: 'mysql' },
     { name: 'WordPress', icon: faWordpress },
     { name: 'Figma', icon: faFigma },
+    { name: 'Adobe Photoshop', icon: 'adobe-photoshop' },
     { name: 'Git', icon: faGitAlt },
   ];
 
   const learning = [
-    { name: 'Laravel', icon: faLaravel },
     { name: 'Node.js', icon: faNodeJs },
+    { name: 'Express.js', icon: 'expressjs' },
     { name: 'MongoDB', icon: 'mongodb' },
     { name: 'TypeScript', icon: 'typescript' },
   ];
@@ -123,18 +152,22 @@ const Skills = () => {
 
         <div className="mb-16">
           <h3 className="text-xl font-semibold mb-8 text-center">USING NOW:</h3>
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8 justify-items-center">
+          <div className="flex flex-wrap justify-center gap-8">
             {usingNow.map((skill, index) => (
-              <SkillItem key={index} name={skill.name} icon={skill.icon} />
+              <div key={index} className="w-24 flex flex-col items-center">
+                <SkillItem name={skill.name} icon={skill.icon} />
+              </div>
             ))}
           </div>
         </div>
 
         <div>
           <h3 className="text-xl font-semibold mb-8 text-center">LEARNING:</h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 justify-items-center">
+          <div className="flex flex-wrap justify-center gap-8">
             {learning.map((skill, index) => (
-              <SkillItem key={index} name={skill.name} icon={skill.icon} />
+              <div key={index} className="w-24 flex flex-col items-center">
+                <SkillItem name={skill.name} icon={skill.icon} />
+              </div>
             ))}
           </div>
         </div>
