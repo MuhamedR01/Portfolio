@@ -19,12 +19,16 @@ const Hero = () => {
   return (
     <>
       {/* Mobile layout */}
-      <div className="md:hidden min-h-screen bg-black text-white relative overflow-hidden pt-24"> {/* Increased top padding */}
+      <div className="md:hidden min-h-screen bg-black text-white relative overflow-hidden pt-24">
         {/* Profile Image */}
-        <img src={profileImage} alt="Muhamed Rexhepi" className="w-full h-full object-cover object-center" />
+        <img 
+          src={profileImage} 
+          alt="Muhamed Rexhepi" 
+          className={`w-full h-full object-cover object-center transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`} 
+        />
 
         {/* Overlay */}
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent pt-20 pb-8 px-6">
+        <div className={`absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent pt-20 pb-8 px-6 transition-transform duration-1000 ${isLoaded ? 'translate-y-0' : 'translate-y-full'}`}>
           <h2 className="text-xl font-light mb-1">Hi, I am</h2>
           <h1 className="text-4xl font-bold mb-2">Muhamed Rexhepi</h1>
           <p className="text-lg mb-6">Full-Stack Developer</p>

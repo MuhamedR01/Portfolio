@@ -79,7 +79,7 @@ const ExpressJsIcon = () => (
 );
 
 const SkillItem = ({ name, icon }) => (
-  <div className="flex flex-col items-center">
+  <div className="flex flex-col items-center w-24">
     {icon === 'mongodb' ? (
       <div className="mb-2">
         <MongoDBIcon />
@@ -111,7 +111,7 @@ const SkillItem = ({ name, icon }) => (
     ) : (
       <FontAwesomeIcon icon={icon} size="3x" className="mb-2" />
     )}
-    <span className="text-xs uppercase">{name}</span>
+    <span className="text-xs text-center leading-tight">{name}</span>
   </div>
 );
 

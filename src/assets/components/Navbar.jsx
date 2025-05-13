@@ -4,6 +4,11 @@ import logo from '../images/logo.png';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -40,7 +45,7 @@ const Navbar = () => {
   const buttonClass = "bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200 text-sm font-medium cursor-pointer";
 
   return (
-    <nav className="bg-white md:bg-transparent absolute w-full z-10">
+    <nav className={`bg-white md:bg-transparent absolute w-full z-10 transition-transform duration-1000 ease-out ${isLoaded ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-2">
           <div className="text-2xl font-bold">
