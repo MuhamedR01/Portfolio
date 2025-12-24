@@ -125,6 +125,7 @@ const Skills = () => {
     { name: 'Next.js', icon: 'nextjs' },
     { name: 'Bootstrap', icon: faBootstrap },
     { name: 'Tailwind CSS', icon: 'tailwind' },
+    { name: 'TypeScript', icon: 'typescript' },
     { name: 'PHP', icon: faPhp },
     { name: 'Laravel', icon: faLaravel },
     { name: 'MySQL', icon: 'mysql' },
@@ -138,7 +139,6 @@ const Skills = () => {
     { name: 'Node.js', icon: faNodeJs },
     { name: 'Express.js', icon: 'expressjs' },
     { name: 'MongoDB', icon: 'mongodb' },
-    { name: 'TypeScript', icon: 'typescript' },
   ];
 
   return (
