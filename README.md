@@ -33,10 +33,6 @@ If your project uses a build tool (webpack, Vite, etc.), run the appropriate com
 ## Contributing
 Contributions, suggestions and improvements are welcome. Please open an issue or submit a pull request describing the change.
 
-## License
-Add a license (for example, MIT) or state the license you prefer. Example:
-
-MIT License
 
 ## Contact
 MuhamedR01 — link to your GitHub profile: https://github.com/MuhamedR01
